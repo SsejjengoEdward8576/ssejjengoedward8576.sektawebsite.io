@@ -1,14 +1,17 @@
-.head_about{
-	text-align: center!important;
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.para1>p{
+	color: goldenrod;
+	margin: auto;
+}
+
 
 footer{
 	text-align: center;
 	color: yellow;
 	padding: 10rem;
-}
-
-footer p{
-	display: inline-block;
-	padding: 2px;
 }

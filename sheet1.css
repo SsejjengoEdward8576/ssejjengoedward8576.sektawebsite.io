@@ -1,29 +1,52 @@
 body{
-	margin: 10px;
-	background-image: url(background_image.png);
+	margin: auto 0;
+	background: linear-gradient(to right,  rgb(203, 21, 179), rgb(0, 204, 255));
 	background-size: cover;
 }
 
 header{
-	position: fixed;
-	  top: 0;
+	text-align: center;
+	top: 0;
   left: 0;
-  width: 100%;
-/*  background-color: #f1f1f1;*/
-  padding: 10px;
-  box-sizing: border-box;
+/*  width: 100%;*/
+/*  padding: 10px;*/
+/*  box-sizing: border-box;*/
+}
+.header{
+	font-family: Georgia;
+	font-size: 2rem;
+	color: blue;
+	background-color: rgba(248, 249, 250, 1.00);
+	max-width: 75%;
+	border-radius: 5px;
+	border-bottom: 2px solid yellow;
+	border-width: 1px;
+	transition: all 1s;
+	padding: auto 0;
+}
+.header:hover{
+	color: yellow;
+	background-color: blue;
+	cursor: pointer;
 }
 
-section{
+.navbar{
 	display: flex;
-	flex-wrap: wrap;
-	padding-top: 100px;
-/*	box-shadow: 2px 2px yellow;*/
+	list-style: none;
+	font-size: 20px;
+	margin: 0;
+	padding: 5px;
+}
+@media only screen and (max-width:600px){
+	.navbar{
+		font-size: 0.8em;
+		padding: 0px;
+	}
 }
 li{
 	color: #FFEB4B;
 	display: inline-block;
-	list-style: none;
+	padding: 20px;
 	transition: all 2s;
 }
 li:hover{
@@ -32,51 +55,18 @@ li:hover{
 }
 a{
 	color: #FFEB4B;
+	text-decoration: none;
 }
-.head1{
-	color: yellow;
-}
-.main_head{
-/*	position: fixed;*/
-	font-family: Georgia;
-	font-size: 2rem;
-	color: blue;
-	background-color: rgba(248, 249, 250, 1.00);
-	border-radius: 10px;
-	border-bottom: 2px solid yellow;
-	border-width: 1px;
-	transition: all 1s;
-}
-.main_head:hover{
-	color: yellow;
-	background-color: blue;
-	cursor: pointer;
+.push{
+	margin-left: auto;
 }
 
-/*div + h3{
-	padding: 100px;
-}*/
-.para1{
-	font-family: "Times New Roman";
-	text-align: center;
-	color: #FFEB4B;
-	border: 5px solid green;
-	padding: 5px;
-	margin: 1px;
-	outline: 2px;
-}
 img{
 	align-items: flex-start;
+	padding: auto;
 	transition: all 1s;
 }
 img:hover{
 	transform: scale(1.1);
-	cursor: pointer;
-}
-.form1{
-	transition: color 2s;
-}
-.form1:hover{
-	color: blue;
 	cursor: pointer;
 }
