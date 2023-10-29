@@ -1,0 +1,132 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	margin: auto 0;
+	background: linear-gradient(to right,  rgb(203, 21, 179), rgb(0, 204, 255));
+	background-size: cover;
+}
+
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    max-width: auto;
+	border-radius: 10px;
+	border-bottom: 2px solid yellow;
+	border-width: 1px;
+	transition: all 1s;
+}
+
+.navbar {
+    background-color: #333;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.main-content {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add animation and transitions for <h1> elements */
+
+h1 {
+    font-size: 36px;
+    color: #ffcc00;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #FF5722; /* Change the color on hover */
+    transform: scale(1.05); /* Enlarge the text on hover */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Define a keyframe animation for <h1> elements */
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1.animated {
+    animation: bounce 1s ease infinite; /* Apply the animation to the element */
+}
+
+
+h2,h3 {
+    color: #007BFF;
+}
+
+p {
+    color: #333;
+}
+
+.sliding-text{
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+    height: 100px;
+}
+
+.sliding-text h2{
+    position: absolute;
+    animation: slide 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Style the custom input */
+.custom-input {
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.custom-input::placeholder {
+    color: #999;
+}
+
+.custom-input:focus {
+    border-color: #007BFF;
+}

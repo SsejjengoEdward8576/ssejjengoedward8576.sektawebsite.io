@@ -12,7 +12,7 @@ header{
 /*  padding: 10px;*/
 /*  box-sizing: border-box;*/
 }
-.header{
+/* .header{
 	font-family: Georgia;
 	font-size: 2rem;
 	color: blue;
@@ -23,7 +23,7 @@ header{
 	border-width: 1px;
 	transition: all 1s;
 	padding: auto 0;
-}
+} */
 .header:hover{
 	color: yellow;
 	background-color: blue;
