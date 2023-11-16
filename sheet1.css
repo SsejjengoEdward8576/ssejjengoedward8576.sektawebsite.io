@@ -1,14 +1,4 @@
-body{
-	margin: auto 0;
-	background: linear-gradient(to right,  rgb(203, 21, 179), rgb(0, 204, 255));
-	background-size: cover;
-}
 
-header{
-	text-align: center;
-	top: 0;
-  left: 0;
-/*  width: 100%;*/
 /*  padding: 10px;*/
 /*  box-sizing: border-box;*/
 }
@@ -36,6 +26,7 @@ header{
 	font-size: 20px;
 	margin: 0;
 	padding: 5px;
+	height: auto;
 }
 @media only screen and (max-width:600px){
 	.navbar{
@@ -57,9 +48,9 @@ a{
 	color: #FFEB4B;
 	text-decoration: none;
 }
-.push{
+/* .push{
 	margin-left: auto;
-}
+} */
 
 img{
 	align-items: flex-start;
@@ -69,4 +60,50 @@ img{
 img:hover{
 	transform: scale(1.1);
 	cursor: pointer;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 200px 200px 150px;
+	grid-auto-rows: auto;
+	gap: 20px;
+	grid-template-areas: 
+	'content content'
+	
+	;
+}
+
+.grid-item-1{
+	grid-area: content;
+	align-items: center;
+}
+
+.main-container{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	column-gap: 10px;
+	row-gap: 7px;
+	padding: auto 0px;
+	align-items: center;
+	grid-template-areas: 
+	'header header header header'
+	'navbar navbar navbar navbar'
+	'main main main main'
+	'main main footer footer';
+}
+
+.item-header{
+	grid-area: header;
+}
+
+.item-navbar{
+	grid-area: navbar;
+}
+
+.item-content{
+	grid-area: main;
+}
+.item-footer{
+	grid-area: footer;
 }

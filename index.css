@@ -1,0 +1,21 @@
+.sliding-text{
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+    height: 100px;
+}
+
+.sliding-text h2{
+    position: absolute;
+    animation: slide 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

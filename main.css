@@ -3,20 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body{
 	margin: auto 0;
 	background: linear-gradient(to right,  rgb(203, 21, 179), rgb(0, 204, 255));
 	background-size: cover;
+    overflow: auto;
 }
 
 .header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #007BFF;
     color: #FFF;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    width: 100%;
     max-width: auto;
 	border-radius: 10px;
 	border-bottom: 2px solid yellow;
@@ -25,8 +28,10 @@ body{
 }
 
 .navbar {
-    background-color: #333;
+    position: relative;
+    background-color: #00a3c4;
     text-align: center;
+    width: auto;
 }
 
 .navbar ul {
@@ -44,13 +49,39 @@ body{
     color: #FFF;
 }
 
+a:active{
+    color: #007BFF;
+}
+
 .main-content {
     background-color: #FFF;
     padding: 20px;
-    margin: 20px;
+    margin: 5px 0px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/*Using Media Query*/
+@media (max-width: 768px) {
+    /* Adjust styles for screens up to 768px width */
+    h1 {
+        font-size: 28px; /* Decrease the font size */
+    }
+    .main-content {
+        padding: 10px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for screens up to 480px width */
+    h1 {
+        font-size: 24px; /* Further decrease the font size */
+    }
+    .main-content {
+        padding: 5px; /* Reduce padding even more */
+    }
+}
+
 
 /* Add animation and transitions for <h1> elements */
 
@@ -90,43 +121,30 @@ p {
     color: #333;
 }
 
-.sliding-text{
-    overflow: hidden;
-    position: relative;
-    width: 800px;
-    height: 100px;
-}
-
-.sliding-text h2{
-    position: absolute;
-    animation: slide 10s linear infinite;
-    white-space: nowrap;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 /* Style the custom input */
 .custom-input {
     width: 200px; /* Adjust the width as needed */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
+    height: 40px;
+    padding: 15px;
+    border: 3px solid #10a9a9;
+    border-radius: 100px;
     font-size: 16px;
     outline: none;
+    margin-bottom: 10px;
+    text-decoration-color: #ff22da;
     transition: border-color 0.3s ease-in-out;
 }
 
 .custom-input::placeholder {
-    color: #999;
+    color: #e8039c;
 }
 
 .custom-input:focus {
     border-color: #007BFF;
+}
+
+footer{
+	text-align: center;
+	color: yellow;
+	padding: 10rem;
 }
