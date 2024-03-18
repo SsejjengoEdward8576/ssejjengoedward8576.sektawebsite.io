@@ -6,16 +6,16 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <form>
-        First Name: <input type="text"><br>
-        Last Name: <input type="text"><br>
-        Email: <input type="email" required><br>
-        BirthDay: <input type="date"><br>
+    <form method="get">
+        First Name: <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lastname"><br>
+        Email: <input type="email" required name="email"><br>
+        BirthDay: <input type="date" name="birthday"><br>
         Gender: <br>
         <input type="radio" name="gender" value="male">Male<br>
         <input type="radio" name="gender" value="female">Female<br>
         <input type="radio" name="gender" value="other">Other<br>
-        <input type="submit" value="Register">
+        <input type="submit" value="Register!">
         <input type="reset">
 
     </form>
