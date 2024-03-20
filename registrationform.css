@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    border: 2px solid gray;
+    align-content: center;
+    max-width: max-content;
+}
+
+.formName{
+    border: 2px inset rgb(255, 242, 0);
+    border-radius: 2px;
+    margin: 5px;
+    border-width: medium;
+    padding: 5px;
+    /* border-bottom: dotted;
+    border-top: dotted; */
+    
+}
