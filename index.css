@@ -1,8 +1,12 @@
+.head1{
+    margin-bottom: auto;
+}
+
 .sliding-text{
     overflow: hidden;
     position: relative;
     width: 800px;
-    height: 100px;
+    height: 60px;
 }
 
 .sliding-text h2{
@@ -19,3 +23,21 @@
         transform: translateX(-100%);
     }
 }
+
+.mission-statement {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .mission-statement h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .mission-statement p {
+    font-size: 16px;
+    color: #666;
+  }
+  

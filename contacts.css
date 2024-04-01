@@ -1,0 +1,22 @@
+.contact-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-text {
+    font-size: 16px;
+    color: #d647c1;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+    color: #ed07a8;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info i {
+    color: #007bff; /* blue color for email */
+  }
+  
