@@ -8,33 +8,34 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<div class="main-container">
-		<div class="item-header">
+		<!-- Main heading and navigation links -->
+		<div class="heading-navbar">
 			<header class="header">
 				<h1 style="text-align: center!important;">SEKTA TECH. SOLUTIONS</h1>
+				<nav class="navbar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="service-product.html">Services & Products </a></li>
+						<li><a href="about-us.html">About-Us</a></li>
+						<li class="push"><a href="contacts.html">Contacts</a></li>
+					</ul>
+				</nav>
+				<input type="text" class="custom-input"	placeholder="Search Here">
 			</header>	
 		</div>
-		<div class="item-navbar">
-			<nav class="navbar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="service-product.html">Services & Products </a></li>
-					<li><a href="about-us.html">About-Us</a></li>
-					<li class="push"><a href="contacts.html">Contacts</a></li>
-				</ul>
-				<input type="text" class="custom-input"	placeholder="Search Here">
-			</nav>	
-		</div>
-		<div class="item-content">
-			<section class="main-content">
+		<div class="contents">
+			<!-- Introductory contents -->
+			<section id="intro-content">
 				<div class="sliding-text">
 					<h2 class="head1">Welcome To SEKTA Tech. Solutions</h2>
 				</div>
-				<div class="intro-statement">
+				<div class="intro-content">
 					<p><b>SEKTA TECH. SOLUTIONS</b> is your one-stop destination for all things tech. Whether you're a tech enthusiast, a professional looking for the latest gadgets, or a business seeking innovative solutions, we've got you covered.</p>
 					<p>We provide cutting-edge tech solutions to solve your technological and business challenges.</p>
-				</div>
-				<div class="mission-statement">
+					<h3>Featured Services/Products:</h3>
+					<p>Discover the latest in technology with our innovative products and services</p>
+					<a href="service-product.html" class="btn">Explore Products</a>
+				<!-- Mission statement -->
 					<h3>Our Mission: Empowering Your Digital Journey</h3>
 					<p>At SEKTA TECH. SOLUTIONS, our mission is to empower individuals and businesses on their digital journey. 
 					We strive to provide innovative tech solutions that inspire creativity, enhance productivity, and simplify the complexities of modern technology. 
@@ -42,25 +43,54 @@
 					Join us and embark on a digital adventure where possibilities are limitless!</p>
 				</div>	
 			</section>
-			<!-- Services/Products -->
-			<section class="main-content">
-				<h3>Featured Services/Products:</h3>
 
+			<!-- Service section starts -->
+			<section id="services">
+				<h3>Our Services</h3>
+				<div class="service">
+					<h4>Web Development</h4>
+					<p>From basic websites to complex web applications, we create tailored solutions to meet your needs.</p>
+				</div>
+				<div class="service">
+					<h4>Digital Marketing</h4>
+					<p>Grow your online presence with our strategic digital marketing services.</p>
+				</div>
 			</section>
+		<!-- Products section starts -->
+			<section id="products">
+				<h3>Featured Products</h3>
+				<div class="product">
+			  		<img src="product1.jpg" alt="Product 1">
+			  		<h4>Product 1</h4>
+			  		<p>Description of Product 1.</p>
+			  		<a href="#" class="btn">Buy Now</a>
+				</div>
+				<div class="product">
+			  		<img src="product2.jpg" alt="Product 2">
+			  		<h4>Product 2</h4>
+			  		<p>Description of Product 2.</p>
+			  		<a href="#" class="btn">Buy Now</a>
+				</div>
+			<!-- Add more products as needed -->
+		  	</section>
+
 			<!-- Get started section -->
-			<section class="main-content">
-				<h3>Get Started Today</h3>
-				<p>Encourage visitors to explore more...</p>
-				<a href="service-product.html">Explore Services</a><br>
-				<p>You can as well register with us</p><a href="registrationform.html">Here</a>
-			</section>
-		</div>
-		<div class="item-footer">
-			<footer style="text-align: center; color:#FFEB4B !important">
-				<p style="color:#FFEB4B !important">Powered By Eddieson</p>
-			</footer>
-		</div>
+			<section id="newsletter">
+				<h3 style="color: #0b3ccf !important;">Subscribe to Our Newsletter</h3>
+				<p>Stay up-to-date with the latest tech trends and promotions.</p>
+				<div>
+					Register with us <a href="registrationform.html">Here</a>
+				</div>
+		  	</section>
+
+			<!-- Footer section -->
+			<div class="item-footer">
+				<footer style="text-align: center; color:#FFEB4B !important">
+					<p style="color:#FFEB4B !important">Powered By Eddieson</p>
+					<p style="color: #FFEB4B !important;">&copy; 2024 SEKTA TECH. SOLUTIONS. All rights reserved.</p>
+				</footer>
+			</div>
 		
-	</div>
+		</div>	
 </body>
 </html>

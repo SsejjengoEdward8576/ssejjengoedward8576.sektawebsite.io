@@ -1,5 +1,7 @@
 .head1{
-    margin-bottom: auto;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 2px;
 }
 
 .sliding-text{
@@ -24,20 +26,29 @@
     }
 }
 
-.mission-statement {
+#intro-content, .intro-content, #services, #products{
+    background-color: #FFF;
+    margin: 3px 0px;
+    padding: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+  
+  #newsletter {
     background-color: #f9f9f9;
     padding: 20px;
-    margin-bottom: 20px;
+    text-align: center;
   }
   
-  .mission-statement h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
+
   
-  .mission-statement p {
-    font-size: 16px;
-    color: #666;
+  footer {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
   }
   
