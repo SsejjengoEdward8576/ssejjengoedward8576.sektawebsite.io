@@ -8,7 +8,8 @@
 
 body{
 	margin: auto 0;
-	background: linear-gradient(to right,  rgb(139, 117, 68), rgb(0, 204, 255));
+	background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
 	background-size: cover;
     overflow: auto;
 }
@@ -28,7 +29,8 @@ nav{
 
 .header{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #007BFF;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
     color: #FFF;
     padding: 10px;
     text-align: center;
@@ -75,6 +77,13 @@ a:active{
     margin-top: 120px;
 } 
 
+section{
+    background-color: #FFF;
+    padding: 40px 30px ;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+}
 /*Using Media Query*/
 @media (max-width: 768px) {
     /* Adjust styles for screens up to 768px width */

@@ -2,6 +2,7 @@
     margin-top: auto;
     padding-top: 20px;
     padding-bottom: 2px;
+    color: yellow;
 }
 
 .sliding-text{
@@ -27,14 +28,47 @@
 }
 
 #intro-content, .intro-content, #services, #products{
-    background-color: #FFF;
+    background-color: #ffffff;
     margin: 3px 0px;
     padding: 20px;
     line-height: 1.5;
     text-align: justify;
 }
+.intro-content, .service, .product{
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+#services, #products, #newsletter{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#intro-content{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 65%);
+}
+.intro-content{
+    background-image: url("/Images/touch-tech-img.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    
+}
+.service{
+    background-color: #D8BFD8;    
+}
+.product{
+    background-color: #E6E6FA;
+}
+.intro-content p {
+    color: #FFF;
+}
+.intro-content a{
+    color: yellow;
+}
   
-  #newsletter {
+#newsletter {
     background-color: #f9f9f9;
     padding: 20px;
     text-align: center;
