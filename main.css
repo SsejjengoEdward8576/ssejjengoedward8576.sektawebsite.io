@@ -172,8 +172,12 @@ p {
     border-color: #007BFF;
 }
 
-footer{
-	text-align: center;
-	color: yellow;
-	padding: 10rem;
+footer {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
 }

@@ -49,7 +49,7 @@
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 65%);
 }
 .intro-content{
-    background-image: url("../../Images/touch-tech.jpg");
+    background-image: url("./Images/touch-tech.jpg");
     background-repeat: repeat-x;
     background-size: cover;
     background-position: center;
@@ -76,13 +76,5 @@
   
 
   
-  footer {
-    background-color: #333;
-    color: yellow;
-    text-align: center;
-    padding: 10px 0;
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
-  }
+
   
