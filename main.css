@@ -21,6 +21,9 @@ header{
     width: 100%;
     z-index: 1000;
 }
+header h1{
+    font-size: 30px;
+}
 
 nav{
     position: sticky;
