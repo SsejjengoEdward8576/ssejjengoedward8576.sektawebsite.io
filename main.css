@@ -22,12 +22,14 @@ header{
     z-index: 1000;
 }
 header h1{
-    font-size: 30px;
+    font-size: 1.8em;
 }
 
 nav{
     position: sticky;
     top: 0;
+    margin-left: 1em;
+    margin-right: .5em;
 }
 
 .header{
@@ -45,8 +47,7 @@ nav{
 }
 
 .navbar {
-    background-color: #00a3c4;
-    text-align: center;
+    padding-left: auto;
 }
 
 .navbar ul {
@@ -56,7 +57,7 @@ nav{
 
 .navbar li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .navbar a {
@@ -82,7 +83,7 @@ a:active{
 
 section{
     background-color: #FFF;
-    padding: 40px 30px ;
+    padding: 10px ;
     margin-top: 5px;
     border-radius: 5px;
 }
@@ -156,10 +157,10 @@ p {
     height: 40px;
     padding: 15px;
     border: 3px solid #10a9a9;
-    border-radius: 100px;
+    border-radius: 8px;
     font-size: 16px;
     outline: none;
-    margin: 10px;
+    margin: 1px;
     text-decoration-color: #ff22da;
     transition: border-color 0.3s ease-in-out;
 }
