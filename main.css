@@ -13,6 +13,13 @@ body{
 	background-size: cover;
     overflow: auto;
 }
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2px;
+}
 
 header{
     position: fixed;
@@ -41,8 +48,8 @@ nav{
     text-align: center;
     overflow: hidden;
     max-width: auto;
-	border-bottom: 2px solid yellow;
-	border-width: 1px;
+	/* border-bottom: 2px solid yellow;
+	border-width: 10px; */
 	transition: all 1s;
 }
 
