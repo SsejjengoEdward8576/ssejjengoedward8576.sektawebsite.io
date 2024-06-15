@@ -1,17 +1,67 @@
-.form{
+.container{
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, rgb(231, 77, 234), rgb(249, 237, 102));
+    font-size: auto;
     display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    margin: 5% auto 0 auto;
     border: 2px solid gray;
-    align-content: center;
-    max-width: max-content;
+    width: 35%;
+    box-sizing: border-box;
 }
 
-.formName{
+fieldset{
+    border: none;
+    padding: 10px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px inset rgb(255, 242, 0);
-    border-radius: 2px;
-    margin: 5px;
-    border-width: medium;
-    padding: 5px;
-    /* border-bottom: dotted;
-    border-top: dotted; */
-    
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="radio"]{
+    margin: 0.5px;
+}
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+
+
+input[type="submit"],
+input[type="reset"]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 8px;
+    font-size: auto;
+    margin-top: 10px;
+    background-color: rgba(232, 235, 236, 0.715);
+    color: rgb(8, 86, 233);
+    border-radius: 10px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: chartreuse;
+}
+
+@media (max-width:600px){
+    .container{
+        width: 90%;
+    }
 }
