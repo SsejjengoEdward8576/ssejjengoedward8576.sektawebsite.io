@@ -6,6 +6,12 @@
     max-width: 100%;
 }
 
+@media (max-width:600px){
+    .body{
+        width: 100%;
+    }
+}
+
 body{
 	margin: auto 0;
 	background: rgb(2,0,36);
