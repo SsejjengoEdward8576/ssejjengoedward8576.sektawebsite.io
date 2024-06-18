@@ -1,3 +1,18 @@
+body {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
+	background-size: cover;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color:rgb(249, 237, 102);
+    padding: 2px;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .container{
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(to right, rgb(231, 77, 234), rgb(249, 237, 102));
@@ -5,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 12px;
-    margin: 5% auto 0 auto;
+    margin: 2% auto 0 auto;
     border: 2px solid gray;
     width: 35%;
     box-sizing: border-box;
