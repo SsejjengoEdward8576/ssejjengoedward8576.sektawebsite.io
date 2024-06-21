@@ -20,7 +20,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     padding: 12px;
-    margin: 2% auto 0 auto;
+    margin: auto auto auto;
     border: 2px solid gray;
     width: 35%;
     box-sizing: border-box;

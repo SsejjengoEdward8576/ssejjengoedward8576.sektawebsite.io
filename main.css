@@ -9,7 +9,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 	margin: auto 0;
-	background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
 	background-size: cover;
     overflow: auto;
@@ -26,10 +25,9 @@ header h1{
 
 .header{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
     color: #FFF;
-    padding: 10px;
+    padding: auto;
     text-align: center;
     overflow: hidden;
     max-width: auto;
@@ -38,7 +36,7 @@ header h1{
 
 .navbar {
     width: 100%;
-    background-color: #333;
+    /* background-color: #333; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,10 +88,6 @@ a:active{
     color: #0004ff;
 }
 
-.contents {
-    margin-top: 120px;
-} 
-
 section {
     background-color: #FFF;
     padding: 10px ;
@@ -106,6 +100,7 @@ section {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        background: linear-gradient(to right, rgb(198, 207, 135), rgb(108, 112, 161));
     }
 
     .navbar ul {
@@ -119,8 +114,14 @@ section {
         text-align: left;
     }
 
+    .navbar ul li a {
+        color: #e80381;
+        font-weight: bold;
+    }
+
     .navbar .toggle {
         display: block;
+        color: black;
     }
 
     .navbar input.custom-input{
@@ -135,6 +136,9 @@ section {
 
 /* Media query for devices with a minimum width of 769px */
 @media (min-width: 769px) {
+    .navbar {
+        background: linear-gradient(to right, rgb(153, 0, 255), rgb(255, 0, 234));
+    }
     .navbar ul {
         display: flex;
         flex-direction: row;
@@ -160,6 +164,31 @@ h1:hover {
     transform: scale(1.05); /* Enlarge the text on hover */
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+
+/* .......................Keyframes Defined here........................ */
+.sliding-text{
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+    height: 60px;
+}
+
+.sliding-text h2{
+    position: absolute;
+    animation: slide 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 /* Define a keyframe animation for <h1> elements */
 
@@ -188,7 +217,7 @@ p {
     color: #333;
 }
 
-/* Style the custom input */
+/* ................................Style the custom input......................... */
 .custom-input {
     width: 200px; /* Adjust the width as needed */
     height: 40px;
@@ -210,25 +239,43 @@ p {
     border-color: #007BFF;
 }
 
-/* Contents styled */
+/* ................................Contents styled here.......................... */
+.main-heading{
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    color: yellow;
+}
+
 #intro-content {
     margin-top: 0%;
     /* padding: 10px; */
     line-height: 1.5;
     text-align: justify;
 }
-.intro-content, #services, #products{
+.intro-content, #services, #products {
     background-color: #ffffff;
     padding: 10px;
     line-height: 1.5;
     text-align: justify;
 }
-.intro-content, .service, .product{
+
+.intro-content, .service, .product {
     background-color: #FFF;
     padding: 10px;
     margin-top: 0px;
     border-radius: 5px;
 }
+
+.main-content {
+    background-color: #FFF;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
 #services, #products, #newsletter{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
