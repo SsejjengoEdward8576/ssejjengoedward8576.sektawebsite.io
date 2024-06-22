@@ -9,7 +9,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 	margin: auto 0;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
+    background: linear-gradient(to right, rgb(42, 240, 118), rgb(241, 103, 236));
 	background-size: cover;
     overflow: auto;
 }
@@ -25,7 +25,7 @@ header h1{
 
 .header{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,42,145,1) 0%, rgba(9,200,250,0.9894082633053222) 100%);
+    /* background: linear-gradient(to right,rgb(240, 130, 242), rgb(178, 202, 240)); */
     color: #FFF;
     padding: auto;
     text-align: center;
@@ -90,9 +90,8 @@ a:active{
 
 section {
     background-color: #FFF;
-    padding: 10px ;
+    padding: 10px;
     margin-top: 5px;
-    border-radius: 5px;
 }
 
 /*Media query for devices with a maximum width of 768px*/
@@ -137,7 +136,7 @@ section {
 /* Media query for devices with a minimum width of 769px */
 @media (min-width: 769px) {
     .navbar {
-        background: linear-gradient(to right, rgb(153, 0, 255), rgb(255, 0, 234));
+        background: linear-gradient(to right, rgb(255, 0, 234),rgb(153, 0, 255));
     }
     .navbar ul {
         display: flex;
@@ -155,7 +154,7 @@ section {
 
 h1 {
     font-size: 36px;
-    color: #ffcc00;
+    color: #0033ff;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -201,7 +200,7 @@ h1:hover {
     }
 }
 
-h1.animated {
+.main-content h2 {
     animation: bounce 1s ease infinite; /* Apply the animation to the element */
 }
 
@@ -310,7 +309,35 @@ p {
     text-align: center;
   }
 
-/* Footer styled */
+/* .........................Styling the Portfolio Page................. */
+.portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project h2 {
+    margin-top: 0;
+}
+.project p {
+    line-height: 1.6;
+}
+.project a {
+    color: #3498db;
+    text-decoration: none;
+}
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* .............................Footer styled......................... */
 footer {
     background-color: #333;
     color: yellow;
