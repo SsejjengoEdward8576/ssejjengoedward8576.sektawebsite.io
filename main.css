@@ -21,6 +21,8 @@ body{
 
 header h1{
     font-size: 1.8em;
+    line-height: 1.9;
+    color: #007BFF;
 }
 
 .header{
@@ -152,13 +154,13 @@ section {
 
 /* Add animation and transitions for <h1> elements */
 
-h1 {
-    font-size: 36px;
+h2 {
+    font-size: 20px;
     color: #0033ff;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-h1:hover {
+h2:hover {
     color: #FF5722; /* Change the color on hover */
     transform: scale(1.05); /* Enlarge the text on hover */
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -191,17 +193,27 @@ h1:hover {
 
 /* Define a keyframe animation for <h1> elements */
 
-@keyframes bounce {
+@keyframes enhancedBounce {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) scale(1.1) rotate(-5deg);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-10px) scale(1.05) rotate(3deg);
     }
 }
 
-.main-content h2 {
-    animation: bounce 1s ease infinite; /* Apply the animation to the element */
+.animated h1 {
+    display: block;
+    font-size: 2em;
+    color: #1960ef;
+    font-weight: bold;
+    animation: enhancedBounce 2s infinite ease-in-out;
 }
 
 
@@ -311,7 +323,7 @@ p {
 
 /* .........................Styling the Portfolio Page................. */
 .portfolio {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
