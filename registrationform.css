@@ -3,24 +3,15 @@ body {
 	background-size: cover;
 }
 
-h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-    color:rgb(249, 237, 102);
-    padding: 2px;
-    text-align: center;
-    text-decoration: underline;
-}
-
 .container{
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(to right, rgb(231, 77, 234), rgb(249, 237, 102));
-    font-size: auto;
+    background: linear-gradient(to right, rgba(223, 102, 225, 0.801), rgba(248, 238, 122, 0.842));
+    font-size: 1.3em;
     display: flex;
     flex-wrap: wrap;
-    padding: 12px;
+    padding: 10px;
     margin: auto auto auto;
+    border-radius: 10px;
     border: 2px solid gray;
     width: 35%;
     box-sizing: border-box;
@@ -34,7 +25,7 @@ fieldset{
 legend{
     font-weight: bold;
     font-size: 1.2em;
-    color: #333;
+    color: #250ce3;
 }
 
 input[type="text"],
@@ -76,7 +67,12 @@ input[type="reset"]{
 }
 
 @media (max-width:600px){
+    h3 {
+        font-size: 10px;
+        text-align: left;
+    }
     .container{
         width: 100%;
+        font-size: medium;
     }
 }

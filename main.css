@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* --------------Reset default styles------------------ */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,6 @@ header h1{
 
 .header{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* background: linear-gradient(to right,rgb(240, 130, 242), rgb(178, 202, 240)); */
     color: #FFF;
     padding: auto;
     text-align: center;
@@ -36,9 +35,9 @@ header h1{
 	transition: all 1s;
 }
 
+/* ---------------------------Styling the navigation bar------------------------------------------- */
 .navbar {
     width: 100%;
-    /* background-color: #333; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +66,7 @@ header h1{
     color: black;
 }
 
-/* Styles for the active navigation links */
+/* -----------------Styles for the active navigation links-------------------------- */
 .navbar ul li.active a {
     background-color: #2196F3;
     color: white;
@@ -341,13 +340,14 @@ p {
 .project p {
     line-height: 1.6;
 }
-.project a {
-    color: #3498db;
+.project a ,#newsletter p a {
+    color: #0296f9;
     text-decoration: none;
 }
-.project a:hover {
+.project a:hover, #newsletter p a:hover  {
     text-decoration: underline;
 }
+
 
 /* .............................Footer styled......................... */
 footer {
