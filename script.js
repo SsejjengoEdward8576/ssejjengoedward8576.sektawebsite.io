@@ -25,3 +25,33 @@ function toggleMenu(){
 
 //Call the function on page load
 window.onload = setActiveNav;
+
+//Giving action to navigation buttons
+const backButton = document.getElementById("backBtn");
+const nextButton = document.getElementById("nextBtn");
+const pages = [
+    'index.html',
+    'service-product.html',
+    'our-works.html', 
+    'about-us.html', 
+    'contacts.html'
+];
+
+function getCurrentPageIndex(){
+    const currentPage = window.location.pathname.split('/').pop();
+    return pages.indexOf(currentPage);
+}
+
+backButton.addEventListener('click', function(){
+    const currentIndex = getCurrentPageIndex();
+    if (currentIndex > 0) {
+        window.location.href = pages[currentIndex - 1];
+    }
+});
+
+nextButton.addEventListener('click', function(){
+    const currentIndex = getCurrentPageIndex();
+    if (currentIndex < pages.length - 1) {
+        window.location.href = pages[currentIndex + 1];
+    }
+});

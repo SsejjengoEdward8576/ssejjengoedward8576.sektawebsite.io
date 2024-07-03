@@ -348,6 +348,29 @@ p {
     text-decoration: underline;
 }
 
+/* ----------------------------Styling Navigation Buttons */
+.navBtn {
+    display: inline-block;
+    margin: 10px;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.navBtn #backBtn {
+    color: #113ce8;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.navBtn #nextBtn {
+    color: green;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #eacd4c;
+}
 
 /* .............................Footer styled......................... */
 footer {
