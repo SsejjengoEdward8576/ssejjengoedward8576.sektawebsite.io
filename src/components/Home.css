@@ -1,0 +1,100 @@
+.home-body {
+    padding: 10px;
+}
+
+.contents {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    margin-top: 0.1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    background: linear-gradient(to right, #bae1ff, #ffffff);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.products-section {
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.product-item img:hover {
+    transform: scale(1.02);
+}
+
+.product-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.product-item .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .btn:hover {
+    background-color: #0056b3;
+}
+
+.link {
+    color: #056fc0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #007bff;
+}

@@ -1,0 +1,109 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(18, 200, 185, 0.852), rgba(144, 26, 203, 0.644));
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.container .form {
+    padding: 2rem;
+}
+
+
+.form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    color: rgb(250, 143, 202);
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"] {
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px inset rgb(239, 139, 234);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form input:focus {
+    border: 2px inset rgb(81, 147, 245);
+    box-shadow: 0 1px 0 rgba(235, 221, 24, 0.947);
+}
+
+.radioBtn {
+    color: blue;
+}
+
+input[type="radio"] {
+    margin: 0.5px;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.formBtn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+input[type="submit"],
+input[type="reset"] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1e1414;
+    background: rgb(126, 247, 124);
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 2px 0 rgba(21, 4, 17, 0.842);
+}
+
+
+.btn:hover {
+    background: #661400;
+    color: chartreuse;
+    box-shadow: 0 1px 0 rgba(246, 230, 7, 0.982);
+}
+
+@media (max-width:600px) {
+    h3 {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .container {
+        width: 100%;
+        font-size: medium;
+    }
+}

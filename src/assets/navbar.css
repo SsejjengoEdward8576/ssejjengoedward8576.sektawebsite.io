@@ -1,0 +1,26 @@
+.vibrant-navbar {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+}
+
+.vibrant-offcanvas {
+    background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f3dc15 !important;
+}
+
+.container-fluid {
+    margin-bottom: 5px !important;
+}
+
+.navbar-brand:hover {
+    background-color: #3b82f6;
+    color: #fde403 !important;
+    text-decoration: none;
+}
