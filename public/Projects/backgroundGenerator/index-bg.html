@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background Generator</title>
+    <meta name="description" content="Generate beautiful CSS gradients instantly and preview the result.">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-
 <body>
+    <noscript>
+        <p style="color: red; text-align:center;">This application requires JavaScript to function properly.</p>
+    </noscript>
     <header class="header">
         <h1 class="header__title">Background Generator</h1>
     </header>
     <main class="main">
-        <div class="controls">
-            <input class="color1" type="color" name="color1" value="#00ff00">
-            <input class="color2" type="color" name="color2" value="#ff0000">
-            <button id="randomize" class="button">Random Colors</button>
-            <button id="save" class="button">Save Gradient</button>
-            <button id="load" class="button">Load Gradient</button>
-        </div>
-        <div class="gradient-preview">
+        <section class="controls" aria-label="Gradient Controls">
+            <fieldset class="color-pickers">
+                <legend>Choose Gradient Colors</legend>
+                <label for="color1">
+                    <span style="display:inline-block;width:1em;height:1em;background:#00ff00;border-radius:50%;vertical-align:middle;margin-right:0.3em;"></span>
+                    Color 1
+                </label>
+                <input id="color1" class="color1" type="color" name="color1" value="#00ff00" aria-label="Select first gradient color">
+                
+                <label for="color2" style="margin-left:1.5em;">
+                    <span style="display:inline-block;width:1em;height:1em;background:#ff0000;border-radius:50%;vertical-align:middle;margin-right:0.3em;"></span>
+                    Color 2
+                </label>
+                <input id="color2" class="color2" type="color" name="color2" value="#ff0000" aria-label="Select second gradient color">
+            </fieldset>
+            <label for="direction" style="margin-top:1em;display:block;">Gradient Direction</label>
+            <select id="direction" name="direction" aria-label="Select gradient direction">
+                <option value="to right">Left → Right</option>
+                <option value="to left">Right → Left</option>
+                <option value="to bottom">Top → Bottom</option>
+                <option value="to top">Bottom → Top</option>
+                <option value="135deg">Diagonal ↘︎</option>
+                <option value="45deg">Diagonal ↗︎</option>
+            </select>
+            <div class="button-group" style="margin-top:1em;">
+                <button id="randomize" class="button" aria-label="Randomize colors">Random Colors</button>
+                <button id="save" class="button" aria-label="Save current gradient">Save Gradient</button>
+                <button id="load" class="button" aria-label="Load saved gradient">Load Gradient</button>
+                <button id="copyCSS" class="button" aria-label="Copy CSS to clipboard">Copy CSS</button>
+            </div>
+            <div id="toast" role="status" aria-live="polite" style="display:none;"></div>
+        </section>
+        <section class="gradient-preview" aria-label="Gradient Preview">
             <div class="gradient" id="gradient"></div>
             <div class="css">
                 <h2 class="css__title">Generated CSS:</h2>
                 <code class="css__code" id="cssCode"></code>
             </div>
-        </div>
+        </section>
     </main>
     <script src="script-bg.js"></script>
 </body>
-
 </html>
