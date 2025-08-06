@@ -46,23 +46,23 @@ const OurWorks = () => {
           <div className="documentation-content">
             <span className="close" onClick={toggleDocumentation}>&times;</span>
             <h2>Documentation</h2>
-            <p>
-              This project's documentation includes detailed instructions on how to use the Background-Generator tool effectively.
-              It covers topics such as:
-              <ul>
-                <li>Introduction to Background-Generator</li>
-                <li>Usage instructions</li>
-                <li>Advanced tips and tricks</li>
-              </ul>
-            </p>
-            <p>
-              To use the Background-Generator tool:
-              <ol>
-                <li>Choose two colors using the color pickers.</li>
-                <li>Observe the background gradient change in real-time.</li>
-                <li>Copy the CSS code generated for the gradient.</li>
-              </ol>
-            </p>
+   <span>
+  This project's documentation includes detailed instructions on how to use the Background-Generator tool effectively.
+  It covers topics such as:
+</span>
+<ul>
+  <li>Introduction to Background-Generator</li>
+  <li>Usage instructions</li>
+  <li>Advanced tips and tricks</li>
+</ul>
+<span>
+  To use the Background-Generator tool:
+</span>
+<ol>
+  <li>Choose two colors using the color pickers.</li>
+  <li>Observe the background gradient change in real-time.</li>
+  <li>Copy the CSS code generated for the gradient.</li>
+</ol>
           </div>
         </div>
       )}
