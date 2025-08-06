@@ -1,1 +1,1 @@
-# ssejjengoedward8576.sektawebsite.io
+# ssejjengoedward8576.sektawebsite.com
